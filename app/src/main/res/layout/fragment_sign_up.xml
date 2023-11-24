@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_grey"
+    tools:context=".ui.fragments.SignUpFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal"
+        android:weightSum="40"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline">
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_arrow"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/union"
+            android:layout_weight="40"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        style="@style/tv_sign_login"
+        />
+
+    <TextView
+        android:id="@+id/tvCreate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_your_account_and_follow"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreate"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            style="@style/personal_info" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:background="@android:color/transparent"
+            style="@style/edit_text_custom_style"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/email"
+            style="@style/personal_info"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:background="@android:color/transparent"
+            style="@style/edit_text_custom_style"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:layout_marginTop="5dp"
+            style="@style/personal_info"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/ic_eye"
+            android:background="@android:color/transparent"
+            style="@style/edit_text_custom_style"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:layout_marginTop="5dp"
+            style="@style/personal_info"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:background="@android:color/transparent"
+            style="@style/edit_text_custom_style"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/privacy_policy"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_marginTop="12dp"
+            style="@style/blue_button" />
+
+        <TextView
+            android:id="@+id/tvAlreadyhaveAccountLoginNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account_login_now"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03892944" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96107054" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.OnBoardingFragment">
+
+    <!--    android:background="@drawable/background_on_boarding"-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_on_boarding" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/tv_aspen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="@string/aspen"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/planyour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plan_your"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/TopGuideline" />
+
+    <TextView
+        android:id="@+id/luxor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/luxurious_vacation"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/planyour" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExplore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/explore"
+        style="@style/blue_button"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        app:layout_constraintStart_toStartOf="@id/LeftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/luxor" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03892944" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96107054" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6607387" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

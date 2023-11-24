@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="blue_button">
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/background_blue_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="tv_aspen">
+        <item name="fontFamily">@font/hiatuss</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">66sp</item>
+    </style>
+
+    <style name="tv_sign_login">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+
+    <style name="personal_info">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="edit_text_custom_style">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="background">@drawable/et_background_shape</item>
+        <item name="elevation">22dp</item>
+    </style>
+</resources>

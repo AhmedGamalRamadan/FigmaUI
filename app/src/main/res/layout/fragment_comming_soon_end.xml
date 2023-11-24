@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.CommingSoonEndFragment">
+
+
+    <ImageView
+        android:id="@+id/imageUnionEnd"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="116dp"
+        android:src="@drawable/union"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvCommingSoon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageUnionEnd"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        android:text="@string/comming_soon"
+        android:gravity="center"
+        style="@style/tv_sign_login"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        app:layout_constraintStart_toStartOf="@id/LeftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvCommingSoon"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        android:layout_marginTop="24dp"
+        style="@style/blue_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03892944" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96107054" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

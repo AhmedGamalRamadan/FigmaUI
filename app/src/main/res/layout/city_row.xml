@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/LeftGuideline"
+        app:layout_constraintTop_toTopOf="parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="177dp"
+        android:elevation="14dp"
+        app:cardCornerRadius="8dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="7dp">
+
+        <ImageView
+            android:id="@+id/cityCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/city1"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/cardLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/RightGuideline"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/city_name"
+            android:textColor="@color/black"
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvCityReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/review_number"
+            android:textColor="@color/blue_button_background"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03892944" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96107054" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
